@@ -1,0 +1,9 @@
+Sphinx==5.3.0
+mypy==0.991
+pip==22.3.1
+pydantic==1.10.3
+pyinstaller==5.6.2
+pylint==2.15.9
+setuptools-scm==7.1.0
+tqdm==4.64.1
+types-setuptools==65.6.0.2
