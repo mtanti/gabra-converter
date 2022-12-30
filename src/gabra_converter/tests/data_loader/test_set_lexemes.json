@@ -1,0 +1,144 @@
+[
+    {
+        "description": "Extra fields.",
+        "input": {
+            "_id": {"$oid": "63b1e0f314e849fa182bcfc3"},
+            "lemma": "nikkiet",
+            "phonetic": "nɪkkɪːt",
+            "pos": "NOUN",
+            "root": {
+                "radicals": "n-k-t",
+                "variant": {"$numberInt": "1"}
+            },
+            "sources": ["DM2015"],
+            "glosses": [
+                {
+                    "gloss": "sb. who dots or punctuates",
+                    "examples": []
+                }
+            ],
+            "norm_freq": {"$numberDouble": "0.0"}
+        },
+        "expected_output": {
+            "_id": {"$oid": "63b1e0f314e849fa182bcfc3"},
+            "lemma": "nikkiet",
+            "phonetic": "nɪkkɪːt",
+            "pos": "NOUN",
+            "root": {
+                "radicals": "n-k-t",
+                "variant": {"$numberInt": 1}
+            },
+            "sources": ["DM2015"],
+            "glosses": [
+                {
+                    "gloss": "sb. who dots or punctuates",
+                    "examples": []
+                }
+            ]
+        }
+    },
+
+    {
+        "description": "derived_form set to a double.",
+        "input": {
+            "_id": {"$oid": "63b1e0f314e849fa182bcfc3"},
+            "lemma": "nikkiet",
+            "derived_form": {"$numberDouble": "2.0"},
+            "phonetic": "nɪkkɪːt",
+            "pos": "NOUN",
+            "root": {
+                "radicals": "n-k-t",
+                "variant": {"$numberInt": "1"}
+            },
+            "sources": ["DM2015"],
+            "glosses": [
+                {
+                    "gloss": "sb. who dots or punctuates",
+                    "examples": []
+                }
+            ]
+        },
+        "expected_output": {
+            "_id": {"$oid": "63b1e0f314e849fa182bcfc3"},
+            "lemma": "nikkiet",
+            "derived_form": {"$numberInt": 2},
+            "phonetic": "nɪkkɪːt",
+            "pos": "NOUN",
+            "root": {
+                "radicals": "n-k-t",
+                "variant": {"$numberInt": 1}
+            },
+            "sources": ["DM2015"],
+            "glosses": [
+                {
+                    "gloss": "sb. who dots or punctuates",
+                    "examples": []
+                }
+            ]
+        }
+    },
+
+    {
+        "description": "Empty root.",
+        "input": {
+            "_id": {"$oid": "63b1e0f314e849fa182bcfc3"},
+            "lemma": "nikkiet",
+            "phonetic": "nɪkkɪːt",
+            "pos": "NOUN",
+            "root": {},
+            "sources": ["DM2015"],
+            "glosses": [
+                {
+                    "gloss": "sb. who dots or punctuates",
+                    "examples": []
+                }
+            ]
+        },
+        "expected_output": {
+            "_id": {"$oid": "63b1e0f314e849fa182bcfc3"},
+            "lemma": "nikkiet",
+            "phonetic": "nɪkkɪːt",
+            "pos": "NOUN",
+            "sources": ["DM2015"],
+            "glosses": [
+                {
+                    "gloss": "sb. who dots or punctuates",
+                    "examples": []
+                }
+            ]
+        }
+    },
+
+    {
+        "description": "Missing root radicals.",
+        "input": {
+            "_id": {"$oid": "63b1e0f314e849fa182bcfc3"},
+            "lemma": "nikkiet",
+            "phonetic": "nɪkkɪːt",
+            "pos": "NOUN",
+            "root": {
+                "variant": {"$numberInt": "1"}
+            },
+            "sources": ["DM2015"],
+            "glosses": [
+                {
+                    "gloss": "sb. who dots or punctuates",
+                    "examples": []
+                }
+            ]
+        },
+        "expected_output": {
+            "_id": {"$oid": "63b1e0f314e849fa182bcfc3"},
+            "lemma": "nikkiet",
+            "phonetic": "nɪkkɪːt",
+            "pos": "NOUN",
+            "sources": ["DM2015"],
+            "glosses": [
+                {
+                    "gloss": "sb. who dots or punctuates",
+                    "examples": []
+                }
+            ]
+        }
+    }
+]

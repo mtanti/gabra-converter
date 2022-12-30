@@ -1,4 +1,6 @@
-'''
+gabra_converter
+===============
+
 Requirements:
 
 .. list-table::
@@ -20,14 +22,8 @@ Requirements:
 ----
 
 Packages:
-'''
 
-import os
-import pkg_resources
+.. toctree::
+    :maxdepth: 1
 
-__version__ = pkg_resources.resource_string(
-    'gabra_converter',
-    'version.txt',
-).decode()
-
-path = os.path.dirname(os.path.abspath(__file__))
+    gabra_converter/converters
