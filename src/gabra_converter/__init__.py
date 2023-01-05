@@ -17,6 +17,12 @@ Feature requirements:
        and any divergent documents should be fixed if possible or skipped
        if unfixable.
 
+   * - ``export``
+     - The program should be able to export lexeme and wordform rows
+       into readable file formats such as CSV, with field containing
+       lists being exported to separate files with foreign keys in order
+       to efficiently store the one-to-many relationships.
+
 ----
 
 Packages:

@@ -1,0 +1,4 @@
+new_id,_id,lemma,pos,root-radicals,root-variant,headword-lemma,headword-pos,form,derived_form,gender,transitive,intransitive,ditransitive,hypothetical,archaic,multiword,pending,phonetic,apertium_paradigm,onomastic_type,comment
+1,63b1e0f314e849fa182bcfc3,nikkiet,NOUN,n-k-t,1,,,,,,,,,,,,,nɪkkɪːt,,,
+2,63b1e10f14e849fa182bcfc4,ftaħir,NOUN,f-ħ-r,,,,,,,,,,,,,,ftɐhɪr,,,
+3,63b1e12214e849fa182bcfc5,ngirex,VERB,g-r-x,2,,,,7,,,1,,,,,,ngɪrɛʃ,,,
