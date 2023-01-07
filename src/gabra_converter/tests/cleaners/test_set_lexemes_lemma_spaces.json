@@ -1,0 +1,67 @@
+[
+    {
+        "description": "Has no spaces.",
+        "accepted": true,
+        "input": {
+            "_id": {"$oid": "63b1e0f314e849fa182bcfc3"},
+            "lemma": "nikkiet",
+            "phonetic": "nɪkkɪːt",
+            "pos": "NOUN",
+            "root": {
+                "radicals": "n-k-t",
+                "variant": {"$numberInt": "1"}
+            },
+            "sources": ["DM2015"],
+            "glosses": [
+                {
+                    "gloss": "sb. wh\no dots \n or punctuates",
+                    "examples": [
+                        {"example": "an\n example\n", "type": "short"},
+                        {"example": "an\nother example\n", "type": "short"}
+                    ]
+                },
+                {
+                    "gloss": "sb. who dots or punctuates\n",
+                    "examples": [
+                        {"example": "an\n example\n", "type": "short"},
+                        {"example": "an\nother example\n", "type": "short"}
+                    ]
+                }
+            ]
+        },
+        "expected_output": {}
+    },
+
+    {
+        "description": "Has spaces.",
+        "accepted": false,
+        "input": {
+            "_id": {"$oid": "63b1e0f314e849fa182bcfc3"},
+            "lemma": "nik kiet",
+            "phonetic": "nɪkkɪːt",
+            "pos": "NOUN",
+            "root": {
+                "radicals": "n-k-t",
+                "variant": {"$numberInt": "1"}
+            },
+            "sources": ["DM2015"],
+           "glosses": [
+                {
+                    "gloss": "sb. who dots  or punctuates",
+                    "examples": [
+                        {"example": "an example", "type": "short"},
+                        {"example": "another example", "type": "short"}
+                    ]
+                },
+                {
+                    "gloss": "sb. who dots or punctuates",
+                    "examples": [
+                        {"example": "an example", "type": "short"},
+                        {"example": "another example", "type": "short"}
+                    ]
+                }
+            ]
+        },
+        "expected_output": {}
+    }
+]

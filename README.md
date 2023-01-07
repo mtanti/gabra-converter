@@ -2,7 +2,6 @@
 
 This program converts [Ġabra](https://mlrs.research.um.edu.mt/resources/gabra/)'s [database dump files](https://mlrs.research.um.edu.mt/resources/gabra-api/p/download), which are for [MongoDB](https://www.mongodb.com/), into a more accessible format, as well as cleaning and normalising it.
 
-
 ## How to use
 
 To use this program, you will need to have the following command line commands available on your computer:
@@ -52,3 +51,22 @@ The files generated are the following:
     Includes a decimal unique ID `new_id`.
 - `wordforms_sources.csv`: Contains the [sources](https://mlrs.research.um.edu.mt/resources/gabra/sources) of each wordform on separate rows using the `new_wordform_id` field to link to the wordform's `new_id` field.
     Includes a decimal unique ID `new_id`.
+
+## Available cleaners
+
+There are a number of options available for skipping and cleaning certain rows from the Ġabra database.
+Some are required whilst others are optional.
+
+### Lexemes
+
+- `new_lines` (required): Remove new lines from the glosses and examples of lexemes.
+- `lemma_capitals`: Skip any lexemes whose lemma contains uppercase letters.
+- `lemma_nonmaltese`: Skip any lexemes whose lemma contains non-Maltese letters.
+- `lemma_spaces`: Skip any lexemes whose lemma contains spaces.
+
+### Wordforms
+
+- `missing_lexeme` (required): Skip any wordforms whose lexeme ID does not refer to an existing lexeme.
+- `surfaceform_capitals`: Skip any wordforms whose surfaceform contains uppercase letters.
+- `surfaceform_nonmaltese`: Skip any wordforms whose surfaceform contains non-Maltese letters.
+- `surfaceform_spaces`: Skip any wordforms whose surfaceform contains spaces.
