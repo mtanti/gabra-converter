@@ -1,0 +1,66 @@
+[
+    {
+        "description": "Surfaceform with only Maltese characters.",
+        "accepted": true,
+        "lexemes_id_map": {
+            "5200a366e36f237975000cc6": 1,
+            "5200a366e36f237975000cc7": 2
+        },
+        "input": {
+            "_id": {"$oid": "63b1e19914e849fa182bcfcc"},
+            "aspect": "imp",
+            "generated": true,
+            "lexeme_id": {"$oid": "5200a366e36f237975000cc6"},
+            "polarity": "neg",
+            "subject": {
+                "person": "p2",
+                "number": "sg"
+            },
+            "surface_form": " tingirexhilkomx",
+            "dir_obj": {
+                "person": "p3",
+                "number": "sg",
+                "gender": "f"
+            },
+            "ind_obj": {
+                "person": "p2",
+                "number": "pl"
+            },
+            "sources": ["Camilleri2013"],
+            "pending": true
+        },
+        "expected_output": {}
+    },
+    {
+        "description": "Surfaceform with non-Maltese characters.",
+        "accepted": false,
+        "lexemes_id_map": {
+            "5200a366e36f237975000cc6": 1,
+            "5200a366e36f237975000cc7": 2
+        },
+        "input": {
+            "_id": {"$oid": "63b1e19914e849fa182bcfcc"},
+            "aspect": "imp",
+            "generated": true,
+            "lexeme_id": {"$oid": "5200a366e36f237975000cc6"},
+            "polarity": "neg",
+            "subject": {
+                "person": "p2",
+                "number": "sg"
+            },
+            "surface_form": "tingirexhilkomxc",
+            "dir_obj": {
+                "person": "p3",
+                "number": "sg",
+                "gender": "f"
+            },
+            "ind_obj": {
+                "person": "p2",
+                "number": "pl"
+            },
+            "sources": ["Camilleri2013"],
+            "pending": true
+        },
+        "expected_output": {}
+    }
+]

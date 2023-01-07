@@ -29,6 +29,7 @@ class CSVWordformExporter(WordformExporter):
         super().__init__(
             id_='csv',
             description='Export the data into a comma separated file.',
+            required_cleaners=set(),
         )
         self.__wordform_id: int = 0
         self.__alternative_id: int = 0

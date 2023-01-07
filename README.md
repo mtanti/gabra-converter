@@ -2,7 +2,6 @@
 
 This program converts [Ġabra](https://mlrs.research.um.edu.mt/resources/gabra/)'s [database dump files](https://mlrs.research.um.edu.mt/resources/gabra-api/p/download), which are for [MongoDB](https://www.mongodb.com/), into a more accessible format, as well as cleaning and normalising it.
 
-
 ## How to use
 
 To use this program, you will need to have the following command line commands available on your computer:
@@ -56,3 +55,44 @@ The files generated are the following:
     Includes a decimal unique ID `new_id`.
 - `wordforms_sources.csv`: Contains the [sources](https://mlrs.research.um.edu.mt/resources/gabra/sources) of each wordform on separate rows using the `new_wordform_id` field to link to the wordform's `new_id` field.
     Includes a decimal unique ID `new_id`.
+
+## Available cleaners
+
+There are a number of options available for skipping or cleaning certain rows from the Ġabra database.
+Some are required whilst others are optional, depending on the exporter used.
+
+### Lexeme related cleaners
+
+- `new_lines`: Remove new lines from the glosses and examples of lexemes.
+- `lemma_capitals`: Skip any lexemes whose lemma contains uppercase letters.
+- `lemma_nonmaltese`: Skip any lexemes whose lemma contains non-Maltese letters.
+- `lemma_spaces`: Skip any lexemes whose lemma contains spaces.
+- `pending`: Skip any lexemes whose pending field is not set to false.
+
+Required cleaners:
+
+||`csv`|
+|---|---|
+|`new_lines`|required|
+|`lemma_capitals`||
+|`lemma_nonmaltese`||
+|`lemma_spaced`||
+|`pending`||
+
+### Wordform related cleaners
+
+- `missing_lexeme`: Skip any wordforms whose lexeme ID does not refer to an existing lexeme.
+- `surfaceform_capitals`: Skip any wordforms whose surfaceform contains uppercase letters.
+- `surfaceform_nonmaltese`: Skip any wordforms whose surfaceform contains non-Maltese letters.
+- `surfaceform_spaces`: Skip any wordforms whose surfaceform contains spaces.
+- `pending`: Skip any wordforms whose pending field is not set to false.
+
+Required cleaners:
+
+||`csv`|
+|---|---|
+|`missing_lexeme`||
+|`surfaceform_capitals`||
+|`surfaceform_nonmaltese`||
+|`surfaceform_spaces`||
+|`pending`||

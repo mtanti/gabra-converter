@@ -11,9 +11,15 @@ from gabra_converter.converters.lexemes.row.lexeme_row import LexemeRow
 from gabra_converter.converters.lexemes.exporters.lexeme_exporter_list import (
     get_all_lexeme_exporters
 )
+from gabra_converter.converters.lexemes.cleaners.lexeme_cleaner_list import (
+    get_all_lexeme_cleaners
+)
 from gabra_converter.converters.wordforms.row.wordform_row import WordformRow
 from gabra_converter.converters.wordforms.exporters.wordform_exporter_list import (
     get_all_wordform_exporters
+)
+from gabra_converter.converters.wordforms.cleaners.wordform_cleaner_list import (
+    get_all_wordform_cleaners
 )
 
 
@@ -53,6 +59,24 @@ class Test(unittest.TestCase):
             {exporter.id_ for exporter in get_all_lexeme_exporters()},
             {exporter.id_ for exporter in get_all_wordform_exporters()},
         )
+
+    #########################################
+    def test_required_cleaners(
+        self,
+    ) -> None:
+        '''
+        Check that all the cleaner IDs mentioned in the required_cleaners instance variable are
+        existing ones.
+        '''
+        cleaner_ids = {cleaner.id_ for cleaner in get_all_lexeme_cleaners()}
+        for exporter in get_all_lexeme_exporters():
+            for required_id in exporter.required_cleaners:
+                self.assertIn(required_id, cleaner_ids, msg=f'lexeme exporter {exporter.id_}')
+
+        cleaner_ids = {cleaner.id_ for cleaner in get_all_wordform_cleaners()}
+        for exporter in get_all_wordform_exporters():
+            for required_id in exporter.required_cleaners:
+                self.assertIn(required_id, cleaner_ids, msg=f'wordform exporter {exporter.id_}')
 
     #########################################
     def test_csv(

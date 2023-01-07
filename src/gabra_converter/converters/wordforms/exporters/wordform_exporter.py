@@ -30,15 +30,19 @@ class WordformExporter(ABC):
         self,
         id_: str,
         description: str,
+        required_cleaners: set[str],
     ) -> None:
         '''
         Initialiser.
 
         :param id_: A short unique identifier for the exporter.
         :param description: A short description of what the exporter does.
+        :param required_cleaners: A set of wordform cleaner IDs that this exporter requires in order
+            to work.
         '''
         self.id_: str = id_
         self.description: str = description
+        self.required_cleaners: set[str] = required_cleaners
         self.out_dir_path: str = ''
         self.__files_created: bool = False
 

@@ -23,6 +23,10 @@ Feature requirements:
        lists being exported to separate files with foreign keys in order
        to efficiently store the one-to-many relationships.
 
+   * - ``cleaners``
+     - The program should be able to clean and filter out undesirable
+       rows, even they match the schema.
+
 ----
 
 Packages:

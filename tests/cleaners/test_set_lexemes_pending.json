@@ -1,0 +1,100 @@
+[
+    {
+        "description": "Pending set to false.",
+        "accepted": true,
+        "input": {
+            "_id": {"$oid": "63b1e0f314e849fa182bcfc3"},
+            "lemma": "nikkiet",
+            "phonetic": "nɪkkɪːt",
+            "pos": "NOUN",
+            "root": {
+                "radicals": "n-k-t",
+                "variant": {"$numberInt": "1"}
+            },
+            "sources": ["DM2015"],
+            "glosses": [
+                {
+                    "gloss": "sb. who dots  or punctuates",
+                    "examples": [
+                        {"example": "an example", "type": "short"},
+                        {"example": "another example", "type": "short"}
+                    ]
+                },
+                {
+                    "gloss": "sb. who dots or punctuates",
+                    "examples": [
+                        {"example": "an example", "type": "short"},
+                        {"example": "another example", "type": "short"}
+                    ]
+                }
+            ],
+            "pending": false
+        },
+        "expected_output": {}
+    },
+    {
+        "description": "Pending set to true.",
+        "accepted": false,
+        "input": {
+            "_id": {"$oid": "63b1e0f314e849fa182bcfc3"},
+            "lemma": "nikkiet",
+            "phonetic": "nɪkkɪːt",
+            "pos": "NOUN",
+            "root": {
+                "radicals": "n-k-t",
+                "variant": {"$numberInt": "1"}
+            },
+            "sources": ["DM2015"],
+            "glosses": [
+                {
+                    "gloss": "sb. who dots  or punctuates",
+                    "examples": [
+                        {"example": "an example", "type": "short"},
+                        {"example": "another example", "type": "short"}
+                    ]
+                },
+                {
+                    "gloss": "sb. who dots or punctuates",
+                    "examples": [
+                        {"example": "an example", "type": "short"},
+                        {"example": "another example", "type": "short"}
+                    ]
+                }
+            ],
+            "pending": true
+        },
+        "expected_output": {}
+    },
+    {
+        "description": "Pending unset.",
+        "accepted": false,
+        "input": {
+            "_id": {"$oid": "63b1e0f314e849fa182bcfc3"},
+            "lemma": "nikkiet",
+            "phonetic": "nɪkkɪːt",
+            "pos": "NOUN",
+            "root": {
+                "radicals": "n-k-t",
+                "variant": {"$numberInt": "1"}
+            },
+            "sources": ["DM2015"],
+            "glosses": [
+                {
+                    "gloss": "sb. who dots  or punctuates",
+                    "examples": [
+                        {"example": "an example", "type": "short"},
+                        {"example": "another example", "type": "short"}
+                    ]
+                },
+                {
+                    "gloss": "sb. who dots or punctuates",
+                    "examples": [
+                        {"example": "an example", "type": "short"},
+                        {"example": "another example", "type": "short"}
+                    ]
+                }
+            ]
+        },
+        "expected_output": {}
+    }
+]
