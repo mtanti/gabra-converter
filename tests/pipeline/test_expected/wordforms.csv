@@ -1,0 +1,9 @@
+new_id,new_lexeme_id,_id,lexeme_id,surface_form,gloss,gender,number,plural_form,subject-person,subject-number,subject-gender,dir_obj-person,dir_obj-number,dir_obj-gender,ind_obj-person,ind_obj-number,ind_obj-gender,possessor-person,possessor-number,possessor-gender,form,aspect,polarity,stem,phonetic,pattern,hypothetical,archaic,generated,pending
+1,1,63b1e13d14e849fa182bcfc6,63b1e0f314e849fa182bcfc3,nikkitin,,mf,pl,,,,,,,,,,,,,,,,,,nɪkkɪtɪn,,,,,0
+2,1,63b1e15814e849fa182bcfc7,63b1e0f314e849fa182bcfc3,nikkieta,,f,sg,,,,,,,,,,,,,,,,,,nɪkkɪːtɐ,,,,,0
+3,1,63b1e16514e849fa182bcfc8,63b1e0f314e849fa182bcfc3,nikkiet,,m,sg,,,,,,,,,,,,,,,,,,nɪkkɪːt,,,,,0
+4,2,63b1e17114e849fa182bcfc9,63b1e10f14e849fa182bcfc4,ftaħir,,m,sg,,,,,,,,,,,,,,,,,,ftɐhɪr,,,,,0
+5,2,63b1e17f14e849fa182bcfca,63b1e10f14e849fa182bcfc4,ftaħira,,f,sg,,,,,,,,,,,,,,,,,,ftɐhɪrɐ,,,,,0
+6,3,63b1e18c14e849fa182bcfcb,63b1e12214e849fa182bcfc5,tingirexhielna,,,,,p3,sg,f,p3,sg,f,p1,pl,,,,,,impf,pos,,,,,,1,0
+7,3,63b1e19914e849fa182bcfcc,63b1e12214e849fa182bcfc5,tingirexhilkomx,,,,,p2,sg,,p3,sg,f,p2,pl,,,,,,imp,neg,,,,,,1,0
+8,3,63b1e1a814e849fa182bcfcd,63b1e12214e849fa182bcfc5,jingirxuekx,,,,,p3,pl,,p2,sg,,,,,,,,,impf,neg,,,,,,1,0

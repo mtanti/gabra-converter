@@ -27,6 +27,11 @@ Feature requirements:
      - The program should be able to clean and filter out undesirable
        rows, even they match the schema.
 
+   * - ``pipeline``
+     - The program should be able to process a whole JSON lines file of
+       lexemes and wordforms using a list of cleaners and an exporter,
+       with JSON encoded rows that get rejected being loggable.
+
 ----
 
 Packages:

@@ -1,0 +1,5 @@
+json_line	reason
+{"_id":{"$oid":"63b1e12214e849fa182bcf01"},"lemma":"lemma","pos":"VERB","sources":["fake"],"pending":false,}	Invalid JSON
+{"_id":{"$oid":"63b1e12214e849fa182bcf02"},"pos":"VERB","sources":["fake"],"pending":false}	Schema mismatch
+{"_id":{"$oid":"63b1e12214e849fa182bcf03"},"lemma":"lem ma","pos":"VERB","sources":["fake"],"pending":false}	lemma_spaces
+{"_id":{"$oid":"63b1e12214e849fa182bcf04"},"lemma":"lemmac","pos":"VERB","sources":["fake"],"pending":false}	lemma_nonmaltese
