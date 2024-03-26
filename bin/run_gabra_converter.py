@@ -282,7 +282,7 @@ def main(
         return
 
     print('Starting process.')
-    os.makedirs(os.path.abspath(args.out_path))
+    os.makedirs(os.path.abspath(args.out_path), exist_ok=True)
     lexeme_skip_log = LexemePipelineListenerSkipLog()
     lexeme_skip_log.create(os.path.abspath(args.out_path))
     wordform_skip_log = WordformPipelineListenerSkipLog()
