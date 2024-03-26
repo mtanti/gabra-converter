@@ -39,6 +39,6 @@ Packages:
 
 import os
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 path = os.path.dirname(os.path.abspath(__file__))
