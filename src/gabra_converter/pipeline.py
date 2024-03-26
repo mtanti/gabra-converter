@@ -203,7 +203,7 @@ def pipeline(
         wordform_pipeline = WordformPipeline(wordform_cleaners, wordform_exporter)
         for wordform_listener in wordform_pipeline_listeners:
             wordform_pipeline.add_listener(wordform_listener)
-        wordform_pipeline.create(tmp_path)
+        wordform_pipeline.create(out_path)
         wordform_pipeline.convert_file(os.path.join(tmp_path, 'wordforms.jsonl'), lexeme_ids)
         for listener in pipeline_listeners:
             listener.ended_exporting_wordforms()
