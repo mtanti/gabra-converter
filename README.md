@@ -9,14 +9,14 @@ To use this program, you will need to have the following command line commands a
 - `tar`: [7-zip archiver](https://www.7-zip.org/download.html)
 - `bsondump`: [MongoDB tool](https://www.mongodb.com/docs/database-tools/installation/installation/)
 
-Make sure that you install the above applications and then test them in your command line / terminal with the following commands:
+Make sure that you install the above applications and then test them in your command line with the following commands:
 
 - `tar --version`
 - `bsondump --version`
 
-Once you have these applications available in your command line / terminal, you can now download a [Ġabra database dump file](https://mlrs.research.um.edu.mt/resources/gabra-api/p/download).
+Once you have these applications available in your command line, you can now download a [Ġabra database dump file](https://mlrs.research.um.edu.mt/resources/gabra-api/p/download).
 
-Use the exporter by calling `python bin/run_gabra_converter.py` or `gabra_converter`/`./gabra_converter` in the command line / terminal as follows:
+Use the exporter by calling `python bin/run_gabra_converter.py` or `gabra_converter.exe` in the command line as follows:
 
 `python bin/run_gabra_converter.py --gabra_dump_path <path to dump file> --out_path <path to folder with exported files> --lexeme_cleaners <space separated list of lexeme cleaner names> --wordform_cleaners <space separated list of wordform cleaner names> --lexeme_exporter <exporter name> --wordform_exporter <exporter name, usually the same as the lexeme exporter>`
 
@@ -24,7 +24,7 @@ Here is a typical example:
 
 `python bin/run_gabra_converter.py --gabra_dump_path path/to/gabra --out_path path/to/out --lexeme_cleaners new_lines --wordform_cleaners --lexeme_exporter csv --wordform_exporter csv`
 
-or with the `gabra_converter` executable (add `./` to the front if on Linux):
+or with the `gabra_converter.exe`:
 
 `gabra_converter --gabra_dump_path path/to/gabra --out_path path/to/out --lexeme_cleaners new_lines --wordform_cleaners --lexeme_exporter csv --wordform_exporter csv`
 
