@@ -22,7 +22,7 @@ Use the exporter by calling `python bin/run_gabra_converter.py` or `gabra_conver
 
 Here is a typical example:
 
-`python bin/run_gabra_converter.py --gabra_dump_path path/to/gabra --out_path path/to/out --lexeme_cleaners new_lines --wordform_cleaners --lexeme_exporter csv --wordform_exporter csv`
+`python bin/run_gabra_converter.py --gabra_dump_path path/to/gabra --out_path path/to/out --lexeme_cleaners --wordform_cleaners --lexeme_exporter csv --wordform_exporter csv`
 
 or with the `gabra_converter.exe`:
 
@@ -87,7 +87,7 @@ Required cleaners:
 
 ||`csv`|
 |---|---|
-|`new_lines`|required|
+|`new_lines`||
 |`lemma_capitals`||
 |`lemma_nonmaltese`||
 |`lemma_spaced`||
